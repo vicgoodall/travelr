@@ -4,7 +4,7 @@
 }
 
 #cover-pic {
-    width: 100%;
+    width: 100vw;
     height: auto;
 }
 
@@ -14,6 +14,7 @@
 }
 
 .summary p {
+    padding-right: 2%;
     font-size: 12pt;
     display: inline-block;
 }
