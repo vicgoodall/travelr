@@ -1,12 +1,29 @@
 .opener {
     padding-top: 10%;
-    padding-left: 25%;
+    padding-left: 8%;
 }
 
-h3 {
+.summary {
     padding-top: 5%;
+    width: 50%;
+}
+
+.summary p {
+    font-size: 12pt;
+    display: inline-block;
 }
 
 #quiz-intro {
     padding-top: 3%;
 }
+
+.quiz {
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.results {
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
