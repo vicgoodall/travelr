@@ -3,6 +3,11 @@
     padding-left: 8%;
 }
 
+#cover-pic {
+    width: 100%;
+    height: auto;
+}
+
 .summary {
     padding-top: 5%;
     width: 50%;
@@ -24,6 +29,11 @@
 
 .results {
     padding-top: 10%;
-    padding-left: 5%;
+    padding-left: 15%;
+}
+
+.card {
+    width: 100%;
+    height: auto;
 }
 
