@@ -26,6 +26,7 @@
 .quiz {
     padding-left: 10%;
     padding-top: 5%;
+    display: none;
 }
 
 .results {
@@ -36,5 +37,6 @@
 .card {
     width: 100%;
     height: auto;
+    display: none;
 }
 

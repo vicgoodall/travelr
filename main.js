@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+    $("#show-quiz").click(function() {
+        $(".quiz").show();
+    })
     
     $("#sunshine").click(function() {
         $(".question-box > p").text("Seaside or city?");
@@ -13,6 +17,17 @@ $(document).ready(function() {
             $(".btn2").text("Partying");
             $(".btn1").attr("id", "sunseaadventure");
             $(".btn2").attr("id", "sunbeachparty");
+            let quiz = $(".quiz");
+            let sunSeaAdvCard = $("#sunseaadventurecard");
+            $("#sunseaadventure").click(function() {
+                sunSeaAdvCard.show();
+                quiz.hide();
+            })
+            let sunBeaParCard = $("#sunbeachpartycard");
+            $("#sunbeachparty").click(function() {
+                sunBeaParCard.show();
+                quiz.hide();
+            })
         })
 
         $("#suncity").click(function() {
@@ -21,15 +36,18 @@ $(document).ready(function() {
             $(".btn1").text("Exploring");
             $(".btn1").attr("id", "suncityexplore");
             $(".btn2").attr("id", "suncityrelax");
-        })
+            let quiz = $(".quiz");
+            let sunCityExpCard = $("#suncityexplorecard");
             $("#suncityexplore").click(function() {
-                
+                sunCityExpCard.show(); 
+                quiz.hide(); 
             })
-
+            let sunCityRelCard = $("#suncityrelaxcard");
             $("#suncityrelax").click(function() {
-                
+                sunCityRelCard.show();
+                quiz.hide();
             })
-
+        })
     })
 
     $("#snow").click(function() {
@@ -45,6 +63,17 @@ $(document).ready(function() {
             $(".btn2").text("Relaxing");
             $(".btn1").attr("id", "snowcityexploring");
             $(".btn2").attr("id", "snowcityrelaxing");
+            let quiz = $(".quiz");
+            let snowCityExpCard = $("#snowcityexploringcard");
+            $("#snowcityexploring").click(function() {
+                snowCityExpCard.show(); 
+                quiz.hide(); 
+            })
+            let snowCityRelCard = $("#snowcityrelaxingcard");
+            $("#suncityrelaxing").click(function() {
+                snowCityRelCard.show();
+                quiz.hide();
+            })
         })
 
         $("#mountains").click(function() {
@@ -53,6 +82,17 @@ $(document).ready(function() {
             $(".btn1").text("Adventuring");
             $(".btn1").attr("id", "snowmntadventure");
             $(".btn2").attr("id", "snowmntrelax");
+            let quiz = $(".quiz");
+            let snowMtAdvCard = $("#snowmntadventurecard");
+            $("#snowcityexploring").click(function() {
+                snowMtAdvCard.show(); 
+                quiz.hide(); 
+            })
+            let snowMtRelCard = $("#snowmntrelaxcard");
+            $("#snowmntrelax").click(function() {
+                snowMtRelCard.show();
+                quiz.hide();
+            })
         })
 
     })
