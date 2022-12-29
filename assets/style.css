@@ -1,3 +1,4 @@
+
 .opener {
     padding-top: 10%;
     padding-left: 8%;
@@ -31,14 +32,14 @@
 
 .results {
     padding-top: 10%;
-    padding-left: 15%;
+    padding-left: 10%;
 }
 
 .card {
-    width: 100%;
+    width: 30vw;
     height: auto;
     display: none;
-    padding: 5%;
+    margin-bottom: 5%;
 }
 
 .destination {

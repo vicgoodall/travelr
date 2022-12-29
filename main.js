@@ -6,93 +6,93 @@ $(document).ready(function() {
         $("#quiz-intro").hide();
     })
     
-    $("#sunshine").click(function() {
-        $(".question-box > p").text("Seaside or city?");
-        $(this).text("Seaside");
-        $(".btn2").text("City");
-        $(".btn1").attr("id", "seaside");
-        $(".btn2").attr("id", "suncity");
+    $("#water").click(function() {
+        $(".question-box > p").text("I'd rather be lakeside or on the coast?");
+        $(this).text("Lake");
+        $(".btn2").text("Coast");
+        $(".btn1").attr("id", "lake");
+        $(".btn2").attr("id", "coast");
 
-        $("#seaside").click(function() {
-            $(".question-box > p").text("Adventuring or partying?");
-            $(this).text("Adventuring");
-            $(".btn2").text("Partying");
-            $(".btn1").attr("id", "sunseaadventure");
-            $(".btn2").attr("id", "sunbeachparty");
+        $("#lake").click(function() {
+            $(".question-box > p").text("Do I prefer water sports or canoeing?");
+            $(this).text("Water sports");
+            $(".btn2").text("Canoeing");
+            $(".btn1").attr("id", "watersports");
+            $(".btn2").attr("id", "canoeing");
             let quiz = $(".quiz");
-            let sunSeaAdvCard = $(".sunseaadventurecard");
-            $("#sunseaadventure").click(function() {
-                sunSeaAdvCard.show();
+            let waterSportsCard = $(".watersportscard");
+            $("#watersports").click(function() {
+                waterSportsCard.show();
                 quiz.hide();
             })
-            let sunBeaParCard = $(".sunbeachpartycard");
-            $("#sunbeachparty").click(function() {
-                sunBeaParCard.show();
+            let canoeingCard = $(".canoeingcard");
+            $("#canoeing").click(function() {
+                canoeingCard.show();
                 quiz.hide();
             })
         })
 
-        $("#suncity").click(function() {
-            $(".question-box > p").text("Exploring or relaxing?");
-            $(this).text("Relaxing");
+        $("#coast").click(function() {
+            $(".question-box > p").text("Which is better: exploring or surfing?");
+            $(this).text("Surfing");
             $(".btn1").text("Exploring");
-            $(".btn1").attr("id", "suncityexplore");
-            $(".btn2").attr("id", "suncityrelax");
+            $(".btn1").attr("id", "exploring");
+            $(".btn2").attr("id", "surfing");
             let quiz = $(".quiz");
-            let sunCityExpCard = $(".suncityexplorecard");
-            $("#suncityexplore").click(function() {
-                sunCityExpCard.show(); 
+            let seaExploringCard= $(".seaexploringcard");
+            $("#exploring").click(function() {
+                seaExploringCard.show(); 
                 quiz.hide(); 
             })
-            let sunCityRelCard = $(".suncityrelaxcard");
-            $("#suncityrelax").click(function() {
-                sunCityRelCard.show();
+            let surfingCard = $(".surfingCard");
+            $("#surfing").click(function() {
+                surfingCard.show();
                 quiz.hide();
             })
         })
     })
 
-    $("#snow").click(function() {
-        $(".question-box > p").text("Mountains or city?");
-        $(this).text("Mountains");
-        $(".btn1").text("City");
-        $(".btn1").attr("id", "snowcity");
-        $(".btn2").attr("id", "mountains");
+    $("#land").click(function() {
+        $(".question-box > p").text("Warm weather or cold?");
+        $(this).text("Cold");
+        $(".btn1").text("Warm");
+        $(".btn1").attr("id", "warm");
+        $(".btn2").attr("id", "cold");
 
-        $("#snowcity").click(function() {
-            $(".question-box > p").text("Exploring or relaxing?");
-            $(this).text("Exploring");
-            $(".btn2").text("Relaxing");
-            $(".btn1").attr("id", "snowcityexploring");
-            $(".btn2").attr("id", "snowcityrelaxing");
+        $("#warm").click(function() {
+            $(".question-box > p").text("Would I rather be hiking or exploring a new city?");
+            $(this).text("Hiking");
+            $(".btn2").text("Explore a city");
+            $(".btn1").attr("id", "hiking");
+            $(".btn2").attr("id", "city");
             let quiz = $(".quiz");
-            let snowCityExpCard = $(".snowcityexploringcard");
-            $("#snowcityexploring").click(function() {
-                snowCityExpCard.show(); 
+            let hiking = $(".hikingcard");
+            $("#hiking").click(function() {
+                hiking.show(); 
                 quiz.hide(); 
             })
-            let snowCityRelCard = $(".snowcityrelaxingcard");
-            $("#suncityrelaxing").click(function() {
-                snowCityRelCard.show();
+            let city = $(".citycard");
+            $("#city").click(function() {
+                city.show();
                 quiz.hide();
             })
         })
 
-        $("#mountains").click(function() {
-            $(".question-box > p").text("Adventuring or relaxing?");
-            $(this).text("Relaxing");
-            $(".btn1").text("Adventuring");
-            $(".btn1").attr("id", "snowmntadventure");
-            $(".btn2").attr("id", "snowmntrelax");
+        $("#cold").click(function() {
+            $(".question-box > p").text("Snowsports or something different?");
+            $(this).text("Something else");
+            $(".btn1").text("Snowsports");
+            $(".btn1").attr("id", "snowsports");
+            $(".btn2").attr("id", "snowexplore");
             let quiz = $(".quiz");
-            let snowMtAdvCard = $(".snowmntadventurecard");
-            $("#snowcityexploring").click(function() {
-                snowMtAdvCard.show(); 
+            let snowSports = $(".snowsportscard");
+            $("#snowsports").click(function() {
+                snowSports.show(); 
                 quiz.hide(); 
             })
-            let snowMtRelCard = $(".snowmntrelaxcard");
-            $("#snowmntrelax").click(function() {
-                snowMtRelCard.show();
+            let snowExplore = $(".snowexplorecard");
+            $("#snowexplore").click(function() {
+                snowExplore.show();
                 quiz.hide();
             })
         })
