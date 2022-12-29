@@ -4,7 +4,7 @@
 }
 
 #cover-pic {
-    width: 100vw;
+    width: 30%;
     height: auto;
 }
 
@@ -38,5 +38,14 @@
     width: 100%;
     height: auto;
     display: none;
+    padding: 5%;
 }
 
+.destination {
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin-top: 4%;
+    margin-left: 10%;
+    width: 25vw;
+    padding: 4%;
+}
