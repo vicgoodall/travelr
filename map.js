@@ -1,7 +1,7 @@
     // Initialize and add the map
     function initMap() {
         // The location of Uluru
-        const swansea = { lat: 51.6214, lng: 3.9436 };
+        const swansea = { lat:  3.9436, lng: 51.6214 };
         // The map
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 7,
