@@ -94,12 +94,51 @@ $(document).ready(function() {
             $("#snowexplore").click(function() {
                 snowExplore.show();
                 quiz.hide();
-            })
-        })
+            });
+        });
 
-    })
-
+    });  
     
-}
+    const destinations = [ "lakeside", "coastal", "kayaking", "sailing", "exploring" ];
+        
 
-);
+    const checkboxes = document.querySelectorAll("input[type='checkbox']");
+    checkboxes.forEach((box) => {
+        box.checked = false;
+        box.addEventListener("change", () => filterCards());
+    });
+
+    function getCheckValues() {
+    var checkboxValues = [];
+    checkboxes.forEach((checkbox) => {
+          if (checkbox.checked) checkboxValues.push(checkbox.value);
+          console.log(checkboxValues);
+    });
+    return checkboxValues;
+   
+};
+
+    function filterCards() {
+        $('.destination').hide();
+        let checkValues = getCheckValues();
+        let matchy = destinations.filter(itm => checkValues.includes(itm));
+        $('div.' + matchy).show();
+        };
+    
+
+    //function filterCards() {
+       // $(".destination").hide();
+        //cardContainer.innerHTML = "";
+       // checkboxValues = grabCheckboxValues();
+        //data.forEach((item) => {
+              //var classes = item.classes;
+             // let matchedClass = [];
+              //var result = (arr, target) => target.every((v) => (arr.includes(v)));
+
+              //var isMatch = result(classes, checkboxValues);
+             // if (isMatch) {
+               //    $('div.' + matchedClass).show();    
+             // }
+        
+ 
+    });

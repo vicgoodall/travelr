@@ -50,3 +50,8 @@
     width: 25vw;
     padding: 4%;
 }
+
+.dest-img {
+    width: 100%;
+    height: auto;
+}

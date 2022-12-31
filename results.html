@@ -9,84 +9,65 @@
     <title>Results</title>
 </head>
 <body>
-  <div>
-    <span class="filter">
-      <h6>Narrow down your results</h6>
-      <input type="checkbox" id="water" name="water" value="Water">
-      <label for="water">Water </label>
-      <input type="checkbox" id="lake" name="lake" value="Lake">
+  <div class="filter">
+      <input type="checkbox" id="lakeside" name="lake" value="lakeside">
       <label for="lake">Lakeside </label>
-      <input type="checkbox" id="coast" name="coast" value="Coast">
-      <label for="coast">Coast </label>
-      <input type="checkbox" id="watersports" name="watersports" value="Watersports">
-      <label for="watersports">Watersports </label>
-      <input type="checkbox" id="exploring" name="exploring" value="Exploring">
-      <label for="exploring">Exploring </label>
-      <input type="checkbox" id="sailing" name="sailing" value="Sailing">
+      <input type="checkbox" id="kayaking" name="kayaking" value="kayaking" >
+      <label for="kayaking">Kayaking</label>
+      <input type="checkbox" id="sailing" name="sailing" value="sailing" >
       <label for="sailing">Sailing </label>
-      <input type="checkbox" id="snorkelling" name="snorkelling" value="Snorkelling">
-      <label for="snorkelling">Snorkelling </label>
-      <input type="checkbox" id="canoeing" name="canoeing" value="Canoeing">
-      <label for="canoeing">Canoeing </label>
-      <input type="checkbox" id="surfing" name="surfing" value="Surfing">
+      <input type="checkbox" id="coastal" name="coast" value="coastal" >
+      <label for="coast">Coastal </label>
+      <input type="checkbox" id="exploring" name="exploring" value="exploring" >
+      <label for="exploring">Exploring </label>
+      <input type="checkbox" id="surfing" name="surfing" value="surfing" >
       <label for="surfing">Surfing </label>
-      <input type="checkbox" id="hiking" name="hiking" value="Hiking">
+      <input type="checkbox" id="hiking" name="hiking" value="hiking" >
       <label for="hiking">Hiking </label>
-      <input type="checkbox" id="city" name="city" value="City">
-      <label for="city">City </label>
-      <input type="checkbox" id="mountains" name="mountains" value="Mountains">
-      <label for="mountains">Mountains </label>
-      <input type="checkbox" id="snowsports" name="snowsports" value="Snowsports">
+      <input type="checkbox" id="snowsports" name="snowsports" value="snowsports" >
       <label for="snowsports">Snowsports </label>
-    </span>
     <h2>Destinations</h2>
   </div>
-    <div class="destination water lake sports">
+  <div class="wrapper">
+    <div class="destination lakeside kayaking">
         <span>
-          <h5>Four Palms, Bahamas</h5>
-          <img>
+          <h5>Golden Lakes, USA</h5>
+          <img class="dest-img" src="assets/images/pexels-tobi-619950.jpg" alt="Golden Lakes, USA">
         </span>
         <span>
           <br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante
-            ipsum primis in faucibus. Morbi molestie urna quis magna elementum, at mollis nulla
-             condimentum. Donec fermentum, dui finibus ullamcorper finibus, odio lorem lobortis nibh, 
-             vitae tincidunt dui nisl et ex. Maecenas venenatis tempus metus, nec ultrices metus aliquam 
-             ac. Sed pellentesque, leo ut sollicitudin elementum.</p>
+          <p>In the heart of the Pacific Northwest, the Golden Lakes provide an incredible landscape to canoe or kayak through. 
+            With the larger lakes up to 30miles long, paddle through one of the most verdant and beautiful regions of North America.  </p>
         </span>
       </div>
   
-      <div class="destination water lake watersports">
+      <div class="destination lakeside sailing">
           <span>
-            <h5>Byron Bay, Australia</h5>
-            <img>
+            <h5>Lake Silver, Italy</h5>
+            <img class="dest-img" src="assets/images/pexels-mali-maeder-42110.jpg" alt="Lake Silver, Italy">
           </span>
           <span>
             <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante
-                ipsum primis in faucibus. Morbi molestie urna quis magna elementum, at mollis nulla
-                 condimentum. Donec fermentum, dui finibus ullamcorper finibus, odio lorem lobortis nibh, 
-                 vitae tincidunt dui nisl et ex. Maecenas venenatis tempus metus, nec ultrices metus aliquam 
-                 ac. Sed pellentesque, leo ut sollicitudin elementum.</p>
+            <p>Tour a serene freshwater lake in northern Italy in your own sailboat. Fully guided and assisted as required, you will
+              be given a crash course in sailing alonside a tour of the region. The boat is fully equipped for a comfortable stay and may accommodate four.
+            </p>
           </span>
         </div>
   
-        <div class="destination water lake watersports">
+        <div class="destination lakeside sailing kayaking">
           <span>
-            <h5>Sagres, Portugal</h5>
-            <img>
+            <h5>Great Salt Lake, USA</h5>
+            <img class="dest-img" src="assets/images/pexels-mark-ingraham-13790095.jpg" alt="Great Salt Lake, USA">
           </span>
           <span>
             <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante
-                ipsum primis in faucibus. Morbi molestie urna quis magna elementum, at mollis nulla
-                 condimentum. Donec fermentum, dui finibus ullamcorper finibus, odio lorem lobortis nibh, 
-                 vitae tincidunt dui nisl et ex. Maecenas venenatis tempus metus, nec ultrices metus aliquam 
-                 ac. Sed pellentesque, leo ut sollicitudin elementum.</p>
+            <p>One of the largest saltwater lakes in the world, this natural wonder in Utah is a memorable experience for those looking
+              for sailing with a difference. Kayaking, sailing and fishing are all popular, with a cosy cabin nearby.
+            </p>
           </span>
         </div>
   
-        <div class="destination water lake exploring">
+        <div class="destination lakeside">
           <span>
             <h5>Ibiza</h5>
             <img>
@@ -101,7 +82,7 @@
           </span>
         </div>
   
-        <div class="destination water lake exploring">
+        <div class="destination lakeside">
           <span>
             <h5>Corfu</h5>
             <img>
@@ -116,7 +97,7 @@
           </span>
         </div>
   
-        <div class="destination water lake exploring">
+        <div class="destination lakeside">
           <span>
             <h5>Miami, USA</h5>
             <img>
@@ -131,7 +112,7 @@
           </span>
         </div>
   
-        <div class="destination water sea exploring sailing">
+        <div class="destination coastal">
           <span>
             <h5>Cairo, Egypt</h5>
             <img>
@@ -146,7 +127,7 @@
           </span>
         </div>
   
-        <div class="destination water sea exploring snorkelling">
+        <div class="destination coastal">
           <span>
             <h5>Athens, Greece</h5>
             <img>
@@ -161,7 +142,7 @@
           </span>
         </div>
   
-        <div class="destination water sea exploring canoeing">
+        <div class="destination coastal">
           <span>
             <h5>Los Angeles, USA</h5>
             <img>
@@ -176,7 +157,7 @@
           </span>
         </div>
   
-        <div class="destination water sea surfing">
+        <div class="destination surfing">
           <span>
             <h5>Phoenix, USA</h5>
             <img>
@@ -191,22 +172,19 @@
           </span>
         </div>
   
-        <div class="destination water sea surfing">
+        <div class="destination surfing">
           <span>
-            <h5>Algarve, Portugal</h5>
+            <h5>Byron Bay, Australia</h5>
             <img>
           </span>
           <span>
             <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante
-                ipsum primis in faucibus. Morbi molestie urna quis magna elementum, at mollis nulla
-                 condimentum. Donec fermentum, dui finibus ullamcorper finibus, odio lorem lobortis nibh, 
-                 vitae tincidunt dui nisl et ex. Maecenas venenatis tempus metus, nec ultrices metus aliquam 
-                 ac. Sed pellentesque, leo ut sollicitudin elementum.</p>
+            <p>The ultimate surfing vacation. <br> One of the most beautiful beaches in the world. <br> Our beachouses are just off the beach, with a private deck area. 
+              Each house is fully furnished and can accommodate up to six people. </p>
           </span>
         </div>
   
-        <div class="destination water sea surfing">
+        <div class="destination surfing">
           <span>
             <h5>Cannes, Monaco</h5>
             <img>
@@ -221,7 +199,7 @@
           </span>
         </div>
 
-    <div class="destination hiking mountains">
+    <div class="destination hiking">
       <span>
         <h5>Iceland</h5>
         <img>
@@ -266,7 +244,7 @@
         </span>
       </div>
 
-      <div class="destination city">
+      <div class="destination exploring">
         <span>
           <h5>Montreal, Canada</h5>
           <img>
@@ -281,7 +259,7 @@
         </span>
       </div>
 
-      <div class="destination city">
+      <div class="destination exploring">
         <span>
           <h5>Reine, Norway</h5>
           <img>
@@ -296,7 +274,7 @@
         </span>
       </div>
 
-      <div class="destination city">
+      <div class="destination exploring">
         <span>
           <h5>Queenstown, New Zealand</h5>
           <img>
@@ -311,7 +289,7 @@
         </span>
       </div>
 
-      <div class="destination snow skiing snowboarding mountains">
+      <div class="destination wintersports">
         <span>
           <h5>Swiss Alps</h5>
           <img>
@@ -326,7 +304,7 @@
         </span>
       </div>
 
-      <div class="destination snow skiing snowboarding mountains">
+      <div class="destination wintersports">
         <span>
           <h5>Banff, Canada</h5>
           <img>
@@ -341,7 +319,7 @@
         </span>
       </div>
 
-      <div class="destination snow skiing snowboarding mountains">
+      <div class="destination wintersports">
         <span>
           <h5>Lapland, Finland</h5>
           <img>
@@ -356,7 +334,7 @@
         </span>
       </div>
 
-      <div class="destination snow exploring">
+      <div class="destination exploring">
         <span>
           <h5>Japan</h5>
           <img>
@@ -371,7 +349,7 @@
         </span>
       </div>
 
-      <div class="destination snow exploring">
+      <div class="destination exploring">
         <span>
           <h5>Norway</h5>
           <img>
@@ -386,7 +364,7 @@
         </span>
       </div>
 
-      <div class="destination snow exploring">
+      <div class="destination exploring">
         <span>
           <h5>France</h5>
           <img>
@@ -400,6 +378,7 @@
               ac. Sed pellentesque, leo ut sollicitudin elementum.</p>
         </span>
       </div>
+    </div>
     <script src="jquery-3.6.2.js"></script>
     <script src="main.js"></script>
 </body>
