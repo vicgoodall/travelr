@@ -16,7 +16,7 @@ $(document).ready(function() {
     });
   }
   
-  window.initMap = initMap;
+  //window.initMap = initMap;
 
 
     $("#show-quiz").click(function() {
