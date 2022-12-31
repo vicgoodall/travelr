@@ -1,5 +1,24 @@
 $(document).ready(function() {
 
+    // Initialize and add the map
+    function initMap() {
+    // The location of Uluru
+    const swansea = { lat: 51.6214, lng: 3.9436 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 7,
+      center: swansea,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: swansea,
+      map: map,
+    });
+  }
+  
+  window.initMap = initMap;
+
+
     $("#show-quiz").click(function() {
         $(".quiz").show();
         $(".summary").hide();
@@ -99,7 +118,7 @@ $(document).ready(function() {
 
     });  
     
-    const destinations = [ "lakeside", "coastal", "kayaking", "sailing", "exploring", "hiking", "snowsports", "surfing" ];
+    const destinations = [ "lakeside", "coastal", "kayaking", "sailing", "exploring", "hiking", "snowsports", "surfing", "city" ];
         
 
     const checkboxes = document.querySelectorAll("input[type='checkbox']");
@@ -113,7 +132,6 @@ $(document).ready(function() {
     var checkboxValues = [];
     checkboxes.forEach((checkbox) => {
           if (checkbox.checked) checkboxValues.push(checkbox.value);
-          //console.log(checkboxValues);
     });
     return checkboxValues;
    
@@ -126,7 +144,6 @@ $(document).ready(function() {
             $('.destination').hide();
             let checkValues = getCheckValues();
             let matchy = destinations.filter(itm => checkValues.includes(itm));
-            //console.log(matchy);
             matchy.forEach((itm) => {
                 $('div.' + itm).show();
             }); 
@@ -140,5 +157,8 @@ $(document).ready(function() {
     function resetCards() {
         $('.destination').show();
     }
+
+    
+
 });
     
