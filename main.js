@@ -99,7 +99,7 @@ $(document).ready(function() {
 
     });  
     
-    const destinations = [ "lakeside", "coastal", "kayaking", "sailing", "exploring" ];
+    const destinations = [ "lakeside", "coastal", "kayaking", "sailing", "exploring", "hiking", "snowsports", "surfing" ];
         
 
     const checkboxes = document.querySelectorAll("input[type='checkbox']");
@@ -109,36 +109,36 @@ $(document).ready(function() {
     });
 
     function getCheckValues() {
+    
     var checkboxValues = [];
     checkboxes.forEach((checkbox) => {
           if (checkbox.checked) checkboxValues.push(checkbox.value);
-          console.log(checkboxValues);
+          //console.log(checkboxValues);
     });
     return checkboxValues;
    
-};
+    };
 
     function filterCards() {
-        $('.destination').hide();
-        let checkValues = getCheckValues();
-        let matchy = destinations.filter(itm => checkValues.includes(itm));
-        $('div.' + matchy).show();
-        };
+
+        if ($(".filter input:checkbox:checked").length > 0)
+        {
+            $('.destination').hide();
+            let checkValues = getCheckValues();
+            let matchy = destinations.filter(itm => checkValues.includes(itm));
+            //console.log(matchy);
+            matchy.forEach((itm) => {
+                $('div.' + itm).show();
+            }); 
+        }
+        else
+        {
+           resetCards();
+        }
+    };
+
+    function resetCards() {
+        $('.destination').show();
+    }
+});
     
-
-    //function filterCards() {
-       // $(".destination").hide();
-        //cardContainer.innerHTML = "";
-       // checkboxValues = grabCheckboxValues();
-        //data.forEach((item) => {
-              //var classes = item.classes;
-             // let matchedClass = [];
-              //var result = (arr, target) => target.every((v) => (arr.includes(v)));
-
-              //var isMatch = result(classes, checkboxValues);
-             // if (isMatch) {
-               //    $('div.' + matchedClass).show();    
-             // }
-        
- 
-    });
