@@ -4,7 +4,7 @@ $(document).ready(function() {
         $(".quiz").show();
         $(".summary").hide();
         $("#quiz-intro").hide();
-    })
+    });
     
     $("#water").click(function() {
         $(".question-box > p").text("I'd rather be lakeside or on the coast?");
@@ -24,13 +24,13 @@ $(document).ready(function() {
             $("#watersports").click(function() {
                 waterSportsCard.show();
                 quiz.hide();
-            })
+            });
             let canoeingCard = $(".canoeingcard");
             $("#canoeing").click(function() {
                 canoeingCard.show();
                 quiz.hide();
-            })
-        })
+            });
+        });
 
         $("#coast").click(function() {
             $(".question-box > p").text("Which is better: exploring or surfing?");
@@ -43,14 +43,14 @@ $(document).ready(function() {
             $("#exploring").click(function() {
                 seaExploringCard.show(); 
                 quiz.hide(); 
-            })
+            });
             let surfingCard = $(".surfingCard");
             $("#surfing").click(function() {
                 surfingCard.show();
                 quiz.hide();
-            })
-        })
-    })
+            });
+        });
+    });
 
     $("#land").click(function() {
         $(".question-box > p").text("Warm weather or cold?");
@@ -70,13 +70,13 @@ $(document).ready(function() {
             $("#hiking").click(function() {
                 hiking.show(); 
                 quiz.hide(); 
-            })
+            });
             let city = $(".citycard");
             $("#city").click(function() {
                 city.show();
                 quiz.hide();
-            })
-        })
+            });
+        });
 
         $("#cold").click(function() {
             $(".question-box > p").text("Snowsports or something different?");
@@ -89,7 +89,7 @@ $(document).ready(function() {
             $("#snowsports").click(function() {
                 snowSports.show(); 
                 quiz.hide(); 
-            })
+            });
             let snowExplore = $(".snowexplorecard");
             $("#snowexplore").click(function() {
                 snowExplore.show();
@@ -109,11 +109,10 @@ $(document).ready(function() {
     });
 
     function getCheckValues() {
-    
-    var checkboxValues = [];
-    checkboxes.forEach((checkbox) => {
+      var checkboxValues = [];
+      checkboxes.forEach((checkbox) => {
           if (checkbox.checked) checkboxValues.push(checkbox.value);
-    });
+      });
     return checkboxValues;
    
     };
@@ -138,8 +137,6 @@ $(document).ready(function() {
     function resetCards() {
         $('.destination').show();
     }
-
-    
 
 });
     
