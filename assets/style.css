@@ -157,13 +157,14 @@ input[type='checkbox'] {
     }
 
     #cover-pic {
-        width: 40vw;
+        width: 30vw;
         height: auto;
         margin-left: 15%;
     } 
 
     .opener {
         margin-left: 15%;
+        padding-top: 5%;
     }
 
     #map {
