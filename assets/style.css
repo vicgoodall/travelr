@@ -1,13 +1,35 @@
 body {
-    background-color: rgb(197, 169, 247);
+    background-color: white;
 }
 
 h3 {
-    color: indigo;
+    color: rgb(40, 5, 62);
+    font-size: 24pt;
 }
 
 .summary p {
-    color: indigo;
+    color: rgb(40, 5, 62);
+    font-size: 16pt;
+    font-weight: bold;
+    padding-right: 2%;
+    display: inline-block;
+}
+
+#quiz-intro {
+    color: rgb(40, 5, 62);
+    font-size: 16pt;
+    font-weight: bold;
+    padding-right: 2%;
+    display: inline-block;
+}
+
+#quiz-intro {
+    padding-top: 8%;
+}
+
+#show-quiz {
+    background-color: rgb(40, 5, 62);
+    margin-bottom: 4%;
 }
 
 
@@ -17,23 +39,9 @@ h3 {
 }
 
 #cover-pic {
-    width: 30%;
+    width: 50vw;
     height: auto;
-}
-
-.summary {
-    padding-top: 5%;
-    width: 50%;
-}
-
-.summary p {
-    padding-right: 2%;
-    font-size: 12pt;
-    display: inline-block;
-}
-
-#quiz-intro {
-    padding-top: 3%;
+    margin-left: 20%;
 }
 
 .quiz {
@@ -69,6 +77,32 @@ h3 {
 }
 
 #map {
-    height: 400px; /* The height is 400 pixels */
-    width: 100%; /* The width is the width of the web page */
+    height: 300px; 
+    width: 75%; 
+    margin-left: 10%;
+    margin-top: 3%;
   }
+
+footer {
+    background-color: rgb(40, 5, 62);
+}
+
+footer h5 {
+    color: palegoldenrod;
+    font-weight: bold;
+    padding: 3%;
+}
+
+footer p {
+    color: palegoldenrod;
+    font-weight: bold;
+    padding-left: 3%;
+    size: 10pt;
+}
+
+.fa-brands {
+    color: palegoldenrod;
+    size: 16pt;
+    padding: 5%;
+}
+
