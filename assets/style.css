@@ -115,8 +115,9 @@ footer p {
     border: 2px solid grey;
     border-radius: 5px;
     margin-top: 4%;
-    margin-left: 10%;
-    width: 60vw;
+    margin-left: 15%;
+    margin-bottom: 4%;
+    width: 75vw;
     padding: 4%;
     background-color: rgb(212, 188, 247);
 }
@@ -144,7 +145,7 @@ input[type='checkbox'] {
 
 .fa-brands {
     color: palegoldenrod;
-    size: 16pt;
+    size: 32pt;
     padding: 5%;
 }
 
