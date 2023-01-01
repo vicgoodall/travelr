@@ -31,7 +31,7 @@ These objectives were then broken down into User Stories, alongisde Stories impo
 ### Wireframes
 
 Balsamiq was used to create the wireframes for this project. The designs took a mobile first approach from origin, where simplicity was key, for users to quickly find the results they're interested in:
-![index phone wireframe] https://github.com/vicgoodall/travelr/blob/main/assets/images/wireframes/wireframe.png
+![index phone wireframe](https://github.com/vicgoodall/travelr/blob/main/assets/images/wireframes/wireframe.png)
 
 ### Look and Feel
 
