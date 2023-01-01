@@ -4,6 +4,8 @@ $(document).ready(function() {
     $("#show-quiz").click(function() {
         $(".quiz").show();
         $(".summary").hide();
+        $("#quiz-intro").hide()
+        $("#show-quiz").hide();
     });
     
     //trigger quiz questions based on user response
