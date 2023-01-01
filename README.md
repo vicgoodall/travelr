@@ -180,4 +180,56 @@ The following shows the results of final testing:
 
 * JSHint showed multiple code lines missing semi-colons, which was amended. 
 
+* CSS Validation found 'size' had erroneously been used. This was replaced by font-size as it was for text.
+
+* HTML Validation found 'p' used as child of 'span' on multiple occasions. This was corrected.
+
+### Browser Testing 
+
+* The project was tested on Safari and Chrome with no functionality issues identified.
+
+* Testing was completed on a 13" laptop screen and an iPhone 12.
+
+## Deployment
+
+Deployed via process:
+* Login to GitHub and locate the GitHub Repository
+* Select 'Settings'
+* Within Settings, select 'Pages'
+* Under Source, select the dropdown 'None' and then select 'Master Branch'
+* A link is then provided to the website
+
+## Credits
+
+### Content
+* Created by the developer
+
+### Media
+#### [Freepik](https://freepik.com/)
+* Homepage image by pch.vector
+#### [Pexels](https://www.pexels.com/)
+* Golden Lake by "tobi"
+* Lake Silver by Mali Maeder
+* Great Salt Lake by Mark Ingraham
+* Noguera Pallaresa by "pixabay"
+* Eibsee Lake by El Jusuf
+* Raja Ampat by John Cahil
+* Palawan by Romel Duarte
+* Canguu by Larry Snickers
+* Byron Bay by "pixabay"
+* Swiss Alps by S Migaj
+* Arizona by Alex Pham
+* Sapa by Duc Nguyen
+* San Miguel de Allende by Robert Lozano
+* Cairo by Alex Azabache
+* New York by Vlad Alexandru Popa
+* Lapland by Nadia Vasil'eva
+* Japan by Alan Wang
+* Bergen by Avonne Stalling
+
+#### Code
+* [W3Schools](https://www.w3schools.com/) was referenced to check how to add css functions to JQuery.
+* [StackOverflow](https://stackoverflow.com/) inspired filter function by showing how an array could be filtered against another array.
+
+
 
