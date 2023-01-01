@@ -1,10 +1,26 @@
+/*-----------------------------------------------------------------------------Background colours */
+
 body {
     background-color: white;
 }
 
+footer {
+    background-color: rgb(40, 5, 62);
+}
+
+/*-----------------------------------------------------------------------------Text styling */
+
 h3 {
     color: rgb(40, 5, 62);
     font-size: 32pt;
+}
+
+h6 {
+    color: rgb(40, 5, 62);
+}
+
+label {
+    color: rgb(40, 5, 62)
 }
 
 .summary p {
@@ -31,6 +47,21 @@ h3 {
     display: inline-block;
 }
 
+footer h5 {
+    color: palegoldenrod;
+    font-weight: bold;
+    padding: 3%;
+}
+
+footer p {
+    color: palegoldenrod;
+    font-weight: bold;
+    padding-left: 3%;
+    size: 10pt;
+}
+
+/*-----------------------------------------------------------------------------Quiz / Button styling */
+
 #quiz-intro {
     padding-top: 8%;
 }
@@ -43,16 +74,9 @@ h3 {
     margin-bottom: 4%;
 }
 
-
 .opener {
     padding-top: 10%;
     padding-left: 8%;
-}
-
-#cover-pic {
-    width: 70vw;
-    height: auto;
-    margin-left: 20%;
 }
 
 .quiz {
@@ -60,6 +84,20 @@ h3 {
     padding-top: 5%;
     display: none;
 }
+
+/*-----------------------------------------------------------------------------Images */
+
+#cover-pic {
+    width: 70vw;
+    height: auto;
+    margin-left: 20%;
+}
+
+.dest-img {
+    width: 100%;
+    height: auto;
+}
+/*-----------------------------------------------------------------------------Card formatting */
 
 .results {
     padding-top: 10%;
@@ -78,14 +116,24 @@ h3 {
     border-radius: 5px;
     margin-top: 4%;
     margin-left: 10%;
-    width: 25vw;
+    width: 60vw;
     padding: 4%;
+    background-color: rgb(212, 188, 247);
 }
 
-.dest-img {
-    width: 100%;
-    height: auto;
+/*-----------------------------------------------------------------------------Filter */
+
+#filter-box {
+    margin-top: 5%;
+    margin-left: 3%;
 }
+
+input[type='checkbox'] {
+    size: 12pt;
+    color: rgb(40, 5, 62);
+}
+
+/*-----------------------------------------------------------------------------Footer styling */
 
 #map {
     height: 300px; 
@@ -93,23 +141,6 @@ h3 {
     margin-left: 10%;
     margin-top: 3%;
   }
-
-footer {
-    background-color: rgb(40, 5, 62);
-}
-
-footer h5 {
-    color: palegoldenrod;
-    font-weight: bold;
-    padding: 3%;
-}
-
-footer p {
-    color: palegoldenrod;
-    font-weight: bold;
-    padding-left: 3%;
-    size: 10pt;
-}
 
 .fa-brands {
     color: palegoldenrod;

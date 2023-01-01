@@ -1,11 +1,13 @@
 $(document).ready(function() {
 
+    //reveal quiz when user clicks button
     $("#show-quiz").click(function() {
         $(".quiz").show();
         $(".summary").hide();
         $("#quiz-intro").hide();
     });
     
+    //trigger quiz questions based on user response
     $("#water").click(function() {
         $(".question-box > p").css({"color": "rgb(40, 5, 62)", "font-size": "16pt", "font-weight": "bold"}).text("Would I rather be lakeside or on the coast?").css({"color": "rgb(40, 5, 62)", "font-size": "16pt", "font-weight": "bold"});
         $(this).text("Lake");
@@ -25,13 +27,14 @@ $(document).ready(function() {
                 waterSportsCard.show();
                 quiz.hide();
             });
+            //cards track to correspondng cards which user is then shown
             let canoeingCard = $(".canoeingcard");
             $("#canoeing").click(function() {
                 canoeingCard.show();
                 quiz.hide();
             });
         });
-
+        // alternative quiz path
         $("#coast").click(function() {
             $(".question-box > p").text("Which is better: exploring or surfing?").css({"color": "rgb(40, 5, 62)", "font-size": "16pt", "font-weight": "bold"});
             $(this).text("Surfing");
@@ -51,7 +54,7 @@ $(document).ready(function() {
             });
         });
     });
-
+    //alternative quiz path
     $("#land").click(function() {
         $(".question-box > p").text("Warm weather or cold?").css({"color": "rgb(40, 5, 62)", "font-size": "16pt", "font-weight": "bold"});
         $(this).text("Cold");
@@ -98,16 +101,17 @@ $(document).ready(function() {
         });
 
     });  
-    
+    // destination ids are logged as an array
     const destinations = [ "lakeside", "coastal", "kayaking", "sailing", "exploring", "hiking", "snowsports", "surfing", "city" ];
         
-
+    //event listener triggers when user checks a filter box
     const checkboxes = document.querySelectorAll("input[type='checkbox']");
     checkboxes.forEach((box) => {
         box.checked = false;
         box.addEventListener("change", () => filterCards());
     });
 
+    //function to record all values checked by user and push into new array
     function getCheckValues() {
       var checkboxValues = [];
       checkboxes.forEach((checkbox) => {
@@ -116,7 +120,8 @@ $(document).ready(function() {
     return checkboxValues;
    
     };
-
+    //function cross-checks destination array against returned checkbox value array
+    //user is shown destination results which match their selected checkboxes
     function filterCards() {
 
         if ($(".filter input:checkbox:checked").length > 0)
@@ -130,10 +135,11 @@ $(document).ready(function() {
         }
         else
         {
-           resetCards();
+         resetCards();
         }
     };
 
+    //function called when checkboxes are all unchecked again by user so all results display again
     function resetCards() {
         $('.destination').show();
     }
