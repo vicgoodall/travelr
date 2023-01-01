@@ -7,14 +7,14 @@ $(document).ready(function() {
     });
     
     $("#water").click(function() {
-        $(".question-box > p").text("I'd rather be lakeside or on the coast?");
+        $(".question-box > p").css({"color": "rgb(40, 5, 62)", "font-size": "16pt", "font-weight": "bold"}).text("Would I rather be lakeside or on the coast?").css({"color": "rgb(40, 5, 62)", "font-size": "16pt", "font-weight": "bold"});
         $(this).text("Lake");
         $(".btn2").text("Coast");
         $(".btn1").attr("id", "lake");
         $(".btn2").attr("id", "coast");
 
         $("#lake").click(function() {
-            $(".question-box > p").text("Do I prefer water sports or canoeing?");
+            $(".question-box > p").text("Do I prefer water sports or canoeing?").css({"color": "rgb(40, 5, 62)", "font-size": "16pt", "font-weight": "bold"});
             $(this).text("Water sports");
             $(".btn2").text("Canoeing");
             $(".btn1").attr("id", "watersports");
@@ -33,7 +33,7 @@ $(document).ready(function() {
         });
 
         $("#coast").click(function() {
-            $(".question-box > p").text("Which is better: exploring or surfing?");
+            $(".question-box > p").text("Which is better: exploring or surfing?").css({"color": "rgb(40, 5, 62)", "font-size": "16pt", "font-weight": "bold"});
             $(this).text("Surfing");
             $(".btn1").text("Exploring");
             $(".btn1").attr("id", "exploring");
@@ -53,14 +53,14 @@ $(document).ready(function() {
     });
 
     $("#land").click(function() {
-        $(".question-box > p").text("Warm weather or cold?");
+        $(".question-box > p").text("Warm weather or cold?").css({"color": "rgb(40, 5, 62)", "font-size": "16pt", "font-weight": "bold"});
         $(this).text("Cold");
         $(".btn1").text("Warm");
         $(".btn1").attr("id", "warm");
         $(".btn2").attr("id", "cold");
 
         $("#warm").click(function() {
-            $(".question-box > p").text("Would I rather be hiking or exploring a new city?");
+            $(".question-box > p").text("Would I rather be hiking or exploring a new city?").css({"color": "rgb(40, 5, 62)", "font-size": "16pt", "font-weight": "bold"});
             $(this).text("Hiking");
             $(".btn2").text("Explore a city");
             $(".btn1").attr("id", "hiking");
@@ -79,7 +79,7 @@ $(document).ready(function() {
         });
 
         $("#cold").click(function() {
-            $(".question-box > p").text("Snowsports or something different?");
+            $(".question-box > p").text("Snowsports or something different?").css({"color": "rgb(40, 5, 62)", "font-size": "16pt", "font-weight": "bold"});
             $(this).text("Something else");
             $(".btn1").text("Snowsports");
             $(".btn1").attr("id", "snowsports");
