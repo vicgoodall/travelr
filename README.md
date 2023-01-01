@@ -1,108 +1,183 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Travelr website
+## Introduction
+Travelr is a specialist travel company that wants to do a small number of vacatian experiences well. It wants to emphasise the experiential to the customer, and appeal to the individualist.
 
-Welcome vicgoodall,
+The website lays the foundation for this, enabling a user to take a very quick quiz to produce a personalised approach, or else view all destinations and filter down using a checkbox system. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The intention is this website could then be built on to develop a full booking system, or flesh out the details of each destination as required. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## User Experience
+### Strategy
 
-## Gitpod Reminders
+The decison on which features to implement and how stemmed from key user objectives:
+* Get a personalised result within 20 seconds
+* Allow the user to view all options
+* Filter the destination by category
+  
+### User Stories
+These objectives were then broken down into User Stories, alongisde Stories important from the perspective of the business owner:
+01. As the customer, I want to be shown holidays I may be most interested in quickly.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+02. As the customer, I want to be able to take a quick quiz to receive a personalised approach.
 
-`python3 -m http.server`
+03. As the customer, I want to be able to choose not to take the quiz if it doesn't interest me.
 
-A blue button should appear to click: _Make Public_,
+04. As the customer, I want to be able to view all options quickly in a scrollable format so I can skim read.
 
-Another blue button should appear to click: _Open Browser_.
+05. As the customer, I want data to be legible on a mobile device.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+06. As the customer, I want to be able to filter data to receive a smaller set of results that is more likely to be of interest to me. 
 
-A blue button should appear to click: _Make Public_,
+### Wireframes
 
-Another blue button should appear to click: _Open Browser_.
+Balsamiq was used to create the wireframes for this project. The designs took a mobile first approach from origin, where simplicity was key, for users to quickly find the results they're interested in:
+![index phone wireframe] https://github.com/vicgoodall/travelr/blob/main/assets/images/wireframes/wireframe.png
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Look and Feel
 
-To log into the Heroku toolbelt CLI:
+The colour palette for this project is minimal, to ensure the destination image vibrancy stands out. 
+To keep the pages accessible, a white background is used with a deep purple text to ensure legibility. The destination results background is a light purple to stand out against the white background. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Features
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Overall Principle
+* Mobile-first design 
 
-------
+* Filtered results that reset easily, so user can change their search
 
-## Release History
+* Focus on getting to preferred results quickly from almost 20 variants, via filter or quiz
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Home Page
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* User welcomed with company name, very brief description and suggestion to take short quiz.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* Can alternatively navigate directly to results.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* Footer: User provided with business contact details & map to show business location. Socials are also provided. 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Quiz
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+* Still on the home page, the user can take a quiz of three questions, each with 2 options. Pressing a button leads to the next option. Quiz is managed via event listeners in JavaScript
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* The user receives at least one result at the end of the quiz, all results contain image, brief tagline and a link to the more detailed results page. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+* Pressing the link button takes the user to the associated card directly. They can navigate to wider results from there. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Results
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* Filter results based on category of holiday. Filter managed via methods in JavaScript.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* User is able to check as many boxes as they want. 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* When a box is unchecked, applicable cards are removed from results list. If all boxes are unchecked by the user, all results are displayed again.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* Results are shown as cards with image and basic description. It's a basic structure that can easily be added to (eg. section with symbols to show amenities available; image gallery; pop-out with longer details; booking API; pricing details, etc.)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+* Footer is displayed as previous
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Technologies
 
-------
+### Languages used
+* HTML5
+* CSS3
+* JavaScript
 
-## FAQ about the uptime script
+### Frameworks, Libraries and Programs used
+* [Balsamiq](https://balsamiq.cloud/): Used as noted above to draw up the initial wireframes.
+* [Font Awesome](https://fontawesome.com/): Provided the social media icons located in the footer.
+* [Bootstrap](https://getbootstrap.com/): Provided the grid system used to create the footer.
+* [JQuery](https://jquery.com/): Used to create the quiz and display appropriate cards in response. 
+* [TinyPNG](https://tinypng.com/) was used to reduce image size.
+* [Gitpod](https://gitpod.io/): For writing code, committing and pushing to GitHub.
+* [GitHub](https://github.com/): Storage of the project once pushed.
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/): The primary resource for testing, particularly testing the filter function as it was being written.
+* [W3C Markup Validator](https://validator.w3.org/): Used to validate the HTML.
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/): Used to validate the CSS.
+* [JSHint](https://jshint.com/): Used to validate JavaScript.
 
-**Why have you added this script?**
+## Testing
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Acceptance Criteria
 
-**How will this affect me?**
+The User Stories were broken down into statements that would indicate they had been implemented successfully:
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+01. As the customer, I want to be shown holidays I may be most interested in quickly.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+* a) Given the user has arrived on the home page, when they first arrive on the site they can immediately view all options
+* b) Given the user has arrived on the home page, the user can take a quiz without scrolling 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+02. As the customer, I want to be able to take a quick quiz to receive a personalised approach.
 
-**So….?**
+* a) Given the user has decided to take the quiz, the can receive a result within 20 seconds
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+* b) Given the user is completing the quiz, they answer three different questions
 
-**Can I opt out?**
+* c) Given the user has completed the quiz, they receive a relevant result
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+* d) Given the user has received their results, they are able to navigate quickly between the result card and fuller details. 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+03. As the customer, I want to be able to choose not to take the quiz if it doesn't interest me.
 
-**Anything more?**
+* a) As the customer, I want the option to skip the quiz to be clearly visible without scrolling
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+* b) When I click the results link, I skip the quiz and leave the home page entirely
 
----
+04. As the customer, I want to be able to view all options quickly in a scrollable format so I can skim read.
 
-Happy coding!
+* a) Given the user has navigated to the results page, all options are by default available to scroll through in a list format
+
+05. As the customer, I want data to be legible on a mobile device.
+
+* a) Given the customer is using a mobile device, when they scroll through results, the images and text are easily legible at default setting on the browser.
+
+06. As the customer, I want to be able to filter data to receive a smaller set of results that is more likely to be of interest to me. 
+
+* a) Given the user is viewing the results page, they have an option available to filter results by type of vacation.
+
+* b) Given the user is filtering the results, they are able to select as mnay checkboxes as they choose
+
+* c) As the user checks a box, the page will amend to show results which are associated to the selected box
+
+* d) If the user de-selects all checkboxes, all results will be displayed again as previous
+
+* e) The user is able to amend their selection as they wish.
+
+### Test Plan
+
+The above acceptance criteria thus provided scenarios which were testable.
+
+### Test Results
+
+The following shows the results of final testing:
+
+| Test ID.   | Mobile Result.   | Desktop Result     |
+|---|----|----|
+| 1A| Pass | Pass |
+|1B| Pass | Pass |
+|2A| Pass | Pass |
+|2B| Pass | Pass |
+|2C| Pass | Pass |
+|2D| Pass | Pass |
+|3A| Pass | Pass |
+|3B| Pass | Pass |
+|4A| Pass | Pass |
+|5A| Pass | Pass |
+|6A| Pass | Pass |
+|6B| Pass | Pass |
+|6C| Pass | Pass |
+|6D| Pass | Pass |
+|6E| Pass | Pass |
+
+### Defects
+
+* The filter originally would not display all results again once the user had de-selected all checkboxes. This was fixed by creating an additional reset function.
+
+* The filter was only displaying cards that were associated to the first checkbox selected if multiple were selected. By moving the categories into an array that could be cross-checked against the selected values, this was resolved.
+
+* The quiz buttons were changing from purple to their standard Bootstrap blue when the additional questions were triggered. This was fixed by adding the styling into the functions as the new questions were generated.
+
+### Code Validation
+
+* JSHint showed multiple code lines missing semi-colons, which was amended. 
+
+

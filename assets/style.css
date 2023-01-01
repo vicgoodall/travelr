@@ -56,7 +56,7 @@ footer p {
     color: palegoldenrod;
     font-weight: bold;
     padding-left: 3%;
-    size: 10pt;
+    font-size: 12pt;
 }
 
 /*-----------------------------------------------------------------------------Quiz / Button styling */
@@ -129,7 +129,7 @@ footer p {
 }
 
 input[type='checkbox'] {
-    size: 12pt;
+    font-size: 12pt;
     color: rgb(40, 5, 62);
 }
 

@@ -118,8 +118,7 @@ $(document).ready(function() {
           if (checkbox.checked) checkboxValues.push(checkbox.value);
       });
     return checkboxValues;
-   
-    };
+    }
     //function cross-checks destination array against returned checkbox value array
     //user is shown destination results which match their selected checkboxes
     function filterCards() {
@@ -137,7 +136,7 @@ $(document).ready(function() {
         {
          resetCards();
         }
-    };
+    }
 
     //function called when checkboxes are all unchecked again by user so all results display again
     function resetCards() {
