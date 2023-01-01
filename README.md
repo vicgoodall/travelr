@@ -231,5 +231,13 @@ Deployed via process:
 * [W3Schools](https://www.w3schools.com/) was referenced to check how to add css functions to JQuery.
 * [StackOverflow](https://stackoverflow.com/) inspired filter function by showing how an array could be filtered against another array.
 
+## Finished Product
+* ![001](https://github.com/vicgoodall/travelr/blob/main/assets/images/final-product/Image01.png)
+* ![002](https://github.com/vicgoodall/travelr/blob/main/assets/images/final-product/Image02.png)
+* ![003](https://github.com/vicgoodall/travelr/blob/main/assets/images/final-product/Image03.png)
+* ![004](https://github.com/vicgoodall/travelr/blob/main/assets/images/final-product/Image04.png)
+* ![005](https://github.com/vicgoodall/travelr/blob/main/assets/images/final-product/Image05.png)
+
+
 
 
