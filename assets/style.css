@@ -4,9 +4,22 @@ body {
     background-color: white;
 }
 
+.nav {
+    background-color: rgb(40, 5, 62);
+}
+
 footer {
     background-color: rgb(40, 5, 62);
 }
+
+/*-----------------------------------------------------------------------------Page formatting */
+
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
 
 /*-----------------------------------------------------------------------------Text styling */
 
@@ -46,14 +59,23 @@ label {
     padding-right: 2%;
 }
 
+.active {
+    font-weight: bold;
+}
+
+.nav-link {
+    color: whitesmoke;
+    font-size: 24px;
+}
+
 footer h5 {
-    color: palegoldenrod;
+    color: whitesmoke;
     font-weight: bold;
     padding: 3%;
 }
 
 footer p {
-    color: palegoldenrod;
+    color: whitesmoke;
     font-weight: bold;
     padding-left: 3%;
     font-size: 12pt;
@@ -144,7 +166,7 @@ input[type='checkbox'] {
   }
 
 .fa-brands {
-    color: palegoldenrod;
+    color: whitesmoke;
     font-size: 24pt;
     padding: 5%;
 }
@@ -194,5 +216,9 @@ input[type='checkbox'] {
         width: 50vw;
         padding: 5%;
         background-color: rgb(212, 188, 247);
+    }
+
+    .nav {
+        padding: 3% 5%;
     }
 }
