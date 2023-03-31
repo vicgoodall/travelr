@@ -17,8 +17,9 @@ footer {
 html, body {
     overflow-x: hidden;
   }
+
   body {
-    position: relative
+    position: relative;
   }
 
 /*-----------------------------------------------------------------------------Text styling */
@@ -81,6 +82,14 @@ footer p {
     font-size: 12pt;
 }
 
+.about p {
+    color: rgb(40, 5, 62);
+    font-size: 16pt;
+    font-weight: bold;
+    padding-right: 2%;
+    display: inline-block;
+}
+
 /*-----------------------------------------------------------------------------Quiz / Button styling */
 
 #quiz-intro {
@@ -106,6 +115,16 @@ footer p {
     padding-top: 5%;
     display: none;
 }
+
+.about-outer {
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.about {
+    width: 80vw;
+    margin: auto;
+  }
 
 /*-----------------------------------------------------------------------------Images */
 
@@ -221,4 +240,5 @@ input[type='checkbox'] {
     .nav {
         padding: 3% 5%;
     }
+
 }
