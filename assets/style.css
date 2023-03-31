@@ -85,7 +85,6 @@ footer p {
 .about p {
     color: rgb(40, 5, 62);
     font-size: 16pt;
-    font-weight: bold;
     padding-right: 2%;
     display: inline-block;
 }
@@ -93,7 +92,7 @@ footer p {
 /*-----------------------------------------------------------------------------Quiz / Button styling */
 
 #quiz-intro {
-    padding-top: 8%;
+    padding-top: 2%;
 }
 
 .btn {
@@ -116,12 +115,12 @@ footer p {
     display: none;
 }
 
-.about-outer {
-    padding-top: 10%;
-    padding-left: 10%;
+.outer {
+    padding: 5% 10%;
 }
 
 .about {
+    padding-top: 5%;
     width: 80vw;
     margin: auto;
   }
@@ -129,9 +128,9 @@ footer p {
 /*-----------------------------------------------------------------------------Images */
 
 #cover-pic {
-    width: 70vw;
-    height: auto;
     margin-left: 20%;
+    width: 20vw;
+    height: auto;
 }
 
 .dest-img {
@@ -166,13 +165,13 @@ footer p {
 /*-----------------------------------------------------------------------------Filter */
 
 #filter-box {
-    margin-top: 5%;
-    margin-left: 3%;
+    margin-left: 10%;
 }
 
 input[type='checkbox'] {
     font-size: 12pt;
     color: rgb(40, 5, 62);
+    margin-left: 2%;
 }
 
 /*-----------------------------------------------------------------------------Footer styling */
@@ -191,6 +190,7 @@ input[type='checkbox'] {
 }
 
 /*-----------------------------------------------------------------------------Media queries */
+
 @media(min-width: 992px) and (max-width: 2559px) {
 
     h3 {
@@ -198,9 +198,7 @@ input[type='checkbox'] {
     }
 
     #cover-pic {
-        width: 30vw;
-        height: auto;
-        margin-left: 15%;
+        margin-left: 10%;
     } 
 
     .opener {
@@ -238,7 +236,11 @@ input[type='checkbox'] {
     }
 
     .nav {
-        padding: 3% 5%;
+        padding: 1% 5%;
     }
 
+    /* Stop the filter breaking into three lines on wider screens */
+    .mobile-break {
+        display: none;
+    }
 }
