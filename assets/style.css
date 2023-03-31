@@ -22,6 +22,14 @@ html, body {
     position: relative;
   }
 
+  .wrapper {
+    margin-right: 8%;
+  }
+  /* results are two per row in wider screens */
+  .results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 /*-----------------------------------------------------------------------------Text styling */
 
 h3 {
@@ -140,8 +148,8 @@ footer p {
 /*-----------------------------------------------------------------------------Card formatting */
 
 .results {
-    padding-top: 10%;
-    padding-left: 10%;
+    padding-top: 5%;
+    padding-left: 5%;
 }
 
 .card {
@@ -159,7 +167,7 @@ footer p {
     margin-bottom: 4%;
     width: 75vw;
     padding: 4%;
-    background-color: rgb(212, 188, 247);
+    background-color: whitesmoke;
 }
 
 /*-----------------------------------------------------------------------------Filter */
@@ -225,14 +233,14 @@ input[type='checkbox'] {
     }
 
     .destination {
-        border: 2px solid grey;
+        border: 1px solid grey;
         border-radius: 5px;
         margin-top: 4%;
-        margin-left: 25%;
+        /* margin-left: 25%; */
         margin-bottom: 4%;
-        width: 50vw;
-        padding: 5%;
-        background-color: rgb(212, 188, 247);
+        width: auto;
+        padding: 2%;
+        background-color: whitesmoke;
     }
 
     .nav {
