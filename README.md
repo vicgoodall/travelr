@@ -97,6 +97,10 @@ To keep the pages accessible, a white background is used with a deep purple text
 
 ## Testing
 
+### Test approach
+* Decision testing is acceptable for the quiz as the results are limited to three questions, meaning 2x2x2 results - 8 variations is feasible.
+* Checking the navigation and general functionality via acceptance criteria
+
 ### Acceptance Criteria
 
 The User Stories were broken down into statements that would indicate they had been implemented successfully:
@@ -142,31 +146,30 @@ The User Stories were broken down into statements that would indicate they had b
 
 * e) The user is able to amend their selection as they wish.
 
-### Test Plan
+### Quiz tests 
 
-The above acceptance criteria thus provided scenarios which were testable.
+Below shows the labelled trnsition system representing the quiz. This has been used to identify all tests, where for each, the tester begins at START, and ends by selecting each of the result cards in turn to ensure they are directed to the correct page point in the Destinations page. 
+
+[Quiz transition system](https://github.com/vicgoodall/travelr/blob/main/assets/images/final-product/lts.png)
 
 ### Test Results
 
-The following shows the results of final testing:
+The following shows the results of quiz testing, where the case name refers to the answer to the third question. For each test, the tester:
+- begins at START
+- follows the transition model through to each result
+- clicks each individual card and validates they arrive at the correct matching card within the Destination page
 
-| Test ID.   | Mobile Result.   | Desktop Result     |
+| Test case | Mobile Result | Desktop Result |
 |---|----|----|
-| 1A| Pass | Pass |
-|1B| Pass | Pass |
-|2A| Pass | Pass |
-|2B| Pass | Pass |
-|2C| Pass | Pass |
-|2D| Pass | Pass |
-|3A| Pass | Pass |
-|3B| Pass | Pass |
-|4A| Pass | Pass |
-|5A| Pass | Pass |
-|6A| Pass | Pass |
-|6B| Pass | Pass |
-|6C| Pass | Pass |
-|6D| Pass | Pass |
-|6E| Pass | Pass |
+| Water sports| Pass | Pass |
+|Canoeing| Pass | Pass |
+|Exploring| Pass | Pass |
+|Surfing| Pass | Pass |
+|Hiking| Pass | Pass |
+|Exploring| Pass | Pass |
+|Snow sports| Pass | Pass |
+|Something else| Pass | Pass |
+
 
 ### Defects
 
