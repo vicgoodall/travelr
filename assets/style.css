@@ -146,7 +146,7 @@ footer p {
 
 #cover-pic {
     margin-left: 20%;
-    width: 20vw;
+    width: 40vw;
     height: auto;
 }
 
@@ -154,6 +154,14 @@ footer p {
     width: 100%;
     height: auto;
 }
+
+/* Row of three images from w3 schools - see readme */
+.gallery {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
 /*-----------------------------------------------------------------------------Card formatting */
 
 .results {

@@ -112,7 +112,7 @@ The User Stories were broken down into statements that would indicate they had b
 
 02. As the customer, I want to be able to take a quick quiz to receive a personalised approach.
 
-* a) Given the user has decided to take the quiz, the can receive a result within 20 seconds
+* a) Given the user has decided to take the quiz, they can receive a result within 20 seconds
 
 * b) Given the user is completing the quiz, they answer three different questions
 
@@ -169,6 +169,22 @@ The following shows the results of quiz testing, where the case name refers to t
 |Exploring| Pass | Pass |
 |Snow sports| Pass | Pass |
 |Something else| Pass | Pass |
+
+
+|Test case | Description | Mobile Result | Desktop Result |
+|---|---|---|---|
+| Navigation from home page | The user is able to navigate to all results with no scrolling and one click/tap | Pass | Pass |
+| Start quiz | The user is able to start the quiz on arrival to the home page | Pass | Pass |
+| Quiz performance | The quiz can be completed in 10 seconds or less | Pass | Pass |
+| Quiz result relevance | When the user completes the quiz, the results are relevant to the choices they selected | Pass Pass |
+| Quiz duration | The quiz lasts precisely three questions for every route | Pass | Pass |
+| View result | For each result displayed, the user is able to navigate to a card with more details | Pass | Pass |
+| View all results | When the user navigates to the Destinations page, all results are displayed and the user is able to scroll to view all | Pass | Pass |
+| Filter all results | If all filter checkboxes are selected, then all results are displayed | Pass | Pass |
+| Remove all filters | When no filter checkboxes are selected, then all results are displayed | Pass | Pass |
+| Filter selection | When the user selects less than all checkboxes, then the results displayed are correct for the filter | Pass | Pass |
+| Change filter | When the user changes their checkbox selection, the results displayed will reflect the change made | Pass | Pass |
+| About page | The user is able to navigate to the About page and view its contents | Pass | Pass |
 
 
 ### Defects
@@ -234,14 +250,5 @@ Deployed via process:
 * [W3Schools](https://www.w3schools.com/) was referenced to check how to add css functions to JQuery.
 * [This StackOverflow](https://stackoverflow.com/questions/34901593/how-to-filter-an-array-from-all-elements-of-another-array) post inspired the filter function by showing how an array could be filtered against another array.
 * [While this StackOverflow](https://stackoverflow.com/questions/237104/how-do-i-check-if-an-array-includes-a-value-in-javascript) also taught me about using the includes method to check the filter array.
-
-## Finished Product
-* ![001](https://github.com/vicgoodall/travelr/blob/main/assets/images/final-product/Image01.png)
-* ![002](https://github.com/vicgoodall/travelr/blob/main/assets/images/final-product/Image02.png)
-* ![003](https://github.com/vicgoodall/travelr/blob/main/assets/images/final-product/Image03.png)
-* ![004](https://github.com/vicgoodall/travelr/blob/main/assets/images/final-product/Image04.png)
-* ![005](https://github.com/vicgoodall/travelr/blob/main/assets/images/final-product/Image05.png)
-
-
 
 
