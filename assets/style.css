@@ -97,6 +97,10 @@ footer p {
     display: inline-block;
 }
 
+.book {
+    font-weight: bold;
+}
+
 /*-----------------------------------------------------------------------------Quiz / Button styling */
 
 #quiz-intro {
@@ -194,7 +198,11 @@ input[type='checkbox'] {
 .fa-brands {
     color: whitesmoke;
     font-size: 24pt;
-    padding: 5%;
+}
+
+.socials {
+    margin: 1%;
+    padding-top: 10%;
 }
 
 /*-----------------------------------------------------------------------------Media queries */
@@ -215,21 +223,25 @@ input[type='checkbox'] {
     }
 
     #map {
-        height: 300px; 
-        width: 75%; 
-        margin-left: 5%;
-        margin-top: 3%;
+        width: 40%; 
+        height: 400px;
+        margin: 4%;
       }
     
     .fa-brands {
         color: whitesmoke;
         font-size: 32pt;
-        padding: 8%;
+        margin: 1%;
+    }
+
+    .socials {
+        margin: 1%;
     }
 
     #contact {
-        text-align: right;
+        text-align: left;
         padding-top: 2%;
+        margin: 2%;
     }
 
     .destination {

@@ -48,7 +48,7 @@ $(document).ready(function() {
                 seaExploringCard.show(); 
                 quiz.hide(); 
             });
-            let surfingCard = $(".surfingCard");
+            let surfingCard = $(".surfingcard");
             $("#surfing").click(function() {
                 surfingCard.show();
                 quiz.hide();
