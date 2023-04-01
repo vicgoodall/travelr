@@ -32,6 +32,9 @@ These objectives were then broken down into User Stories, alongisde Stories impo
 
 Balsamiq was used to create the wireframes for this project. The designs took a mobile first approach from origin, where simplicity was key, for users to quickly find the results they're interested in:
 ![index phone wireframe](https://github.com/vicgoodall/travelr/blob/main/assets/images/wireframes/wireframe.png)
+![desktop homescreen wireframe](https://github.com/vicgoodall/travelr/blob/main/assets/images/wireframes/desk-home.png)
+![desktop quiz wireframe](https://github.com/vicgoodall/travelr/blob/main/assets/images/wireframes/desk-quiz.png)
+![desktop result wireframe](https://github.com/vicgoodall/travelr/blob/main/assets/images/wireframes/desk-result.png)
 
 ### Look and Feel
 
@@ -247,7 +250,8 @@ Deployed via process:
 * Bergen by Avonne Stalling
 
 #### Code
-* [W3Schools](https://www.w3schools.com/) was referenced to check how to add css functions to JQuery.
+* [W3Schools](https://www.w3schools.com/jquery/jquery_css.asp) was referenced to check how to add css functions to JQuery.
+* This [W3Schools](https://www.w3schools.com/howto/howto_css_images_side_by_side.asp) tutorial was used in an edited form to use with Bootstrap on the About page
 * [This StackOverflow](https://stackoverflow.com/questions/34901593/how-to-filter-an-array-from-all-elements-of-another-array) post inspired the filter function by showing how an array could be filtered against another array.
 * [While this StackOverflow](https://stackoverflow.com/questions/237104/how-do-i-check-if-an-array-includes-a-value-in-javascript) also taught me about using the includes method to check the filter array.
 
