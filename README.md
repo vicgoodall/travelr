@@ -214,21 +214,19 @@ The following shows the results of quiz testing, where the case name refers to t
 
 ## Deployment
 
-Deployed via process:
+The website was deployed on [GitHub Pages](https://pages.github.com/) by the following steps:
 * Login to GitHub and locate the GitHub Repository
 * Select 'Settings'
 * Within Settings, select 'Pages'
 * Under Source, select the dropdown 'None' and then select 'Master Branch'
-* A link is then provided to the website
+* A [link](https://vicgoodall.github.io/travelr/) is then provided to the website when you navigate back to the Pages section.
 
 ## Credits
-
-### Content
-* Created by the developer
-
 ### Media
 #### [Freepik](https://freepik.com/)
 * Homepage image by pch.vector
+#### [iconscout](https://iconscout.com/contributors/delesign)
+* About page illustrations by Delesign Graphics
 #### [Pexels](https://www.pexels.com/)
 * Golden Lake by "tobi"
 * Lake Silver by Mali Maeder
