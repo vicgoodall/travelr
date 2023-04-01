@@ -122,6 +122,7 @@ $(document).ready(function() {
     }
     //function cross-checks destination array against returned checkbox value array
     //user is shown destination results which match their selected checkboxes
+    //couple of StackOverflow posts inspired idea to filter array against array - see readme for reference
     function filterCards() {
 
         if ($(".filter input:checkbox:checked").length > 0)

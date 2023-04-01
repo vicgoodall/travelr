@@ -16,226 +16,216 @@
       <a class="nav-link active" href="index.html">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="results.html">View All Destinations</a>
+      <a class="nav-link" href="results.html">All Destinations</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="about.html">About</a>
     </li>
   </ul>
   <!-- Intro with option to take quiz, or view all results -->
-    <div class="opener">
-        <h3>Travelr.</h3>
-        <div class="summary">
-        <p> Find your next adventure here. <br>
-        </p>
-        <img id="cover-pic" src="assets/images/girl-finding-way-during-trekking.svg" alt="Trekking">
-        <br>
+  <div class="opener">
+    <h3>Travelr.</h3>
+    <div class="summary">
+      <p> Find your next adventure here. <br>
+      </p>
+      <img id="cover-pic" src="assets/images/girl-finding-way-during-trekking.svg" alt="Trekking">
+      <br>
+    </div>
+    <div id="quiz-intro">
+      <p>Answer three questions to find your next trip:</p>
+      <br>
+      <button type="button" class="btn btn-info btn-lg" id="show-quiz">Take the quiz</button>
+      <br>
+      <p>Or view them all <a href="results.html" id="results-link">here</a></p>
+    </div>
+  </div>
+  <div class="quiz question-box">
+    <p>I prefer to be on the water</p>
+    <br> <br>
+    <button type="button" class="btn btn-info btn-lg btn1" id="water">On the water</button>
+    <button type="button" class="btn btn-info btn-lg btn2" id="land">Off the water</button>
+  </div>
+  <!-- Cards visible depending on quiz results, link to results page -->
+  <div class="results">
+    <div class="card watersportscard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-pixabay-2438.jpg" alt="Noguera Pallaresa, Spain">
+        <div class="card-body">
+          <h5 class="card-title">Noguera Pallaresa, Spain</h5>
+            <p class="card-text">I want a white water adventure in Spain.</p>
+            <a href="results.html#card4" class="btn btn-primary">Let's Go</a>
         </div>
-        <div id="quiz-intro">
-          <p>Answer three questions to find your next trip:</p>
-            <br>
-            <button type="button" class="btn btn-info btn-lg" id="show-quiz">Take the quiz</button>
-            <br>
-            <p>Or view them all <a href="results.html" id="results-link">here</a></p>
+    </div>
+    <div class="card watersportscard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-el-jusuf-13690540.jpg" alt="Eibsee Lake jetskiing">
+        <div class="card-body">
+          <h5 class="card-title">Eibsee, Germany</h5>
+            <p class="card-text">I want the adrenaline rush of jet skiing.</p>
+            <a href="results.html#card5" class="btn btn-primary">Let's Go</a>
         </div>
     </div>
-    <div class="quiz question-box">
-            <p>I prefer to be on the water</p>
-            <br> <br>
-        <button type="button" class="btn btn-info btn-lg btn1" id="water">On the water</button>
-        <button type="button" class="btn btn-info btn-lg btn2" id="land">Off the water</button>
+    <div class="card canoeingcard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-tobi-619950.jpg" alt="Golden Lakes, USA">
+        <div class="card-body">
+          <h5 class="card-title">Golden Lakes, USA</h5>
+            <p class="card-text">I want to canoe through forests and mountain ranges for two weeks.</p>
+            <a href="results.html#card1" class="btn btn-primary">Let's Go</a>
+        </div>
     </div>
-    <!-- Cards visible depending on quiz results, link to results page -->
-    <div class="results">
-        <div class="card watersportscard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-pixabay-2438.jpg" alt="Noguera Pallaresa, Spain">
-            <div class="card-body">
-              <h5 class="card-title">Noguera Pallaresa, Spain</h5>
-              <p class="card-text">I want a white water adventure in Spain.</p>
-              <a href="results.html#card4" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-          <div class="card watersportscard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-el-jusuf-13690540.jpg" alt="Eibsee Lake jetskiing">
-            <div class="card-body">
-              <h5 class="card-title">Eibsee, Germany</h5>
-              <p class="card-text">I want the adrenaline rush of jet skiing.</p>
-              <a href="results.html#card5" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-
-          <div class="card canoeingcard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-tobi-619950.jpg" alt="Golden Lakes, USA">
-            <div class="card-body">
-              <h5 class="card-title">Golden Lakes, USA</h5>
-              <p class="card-text">I want to canoe through forests and mountain ranges for two weeks.</p>
-              <a href="results.html#card1" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-          <div class="card canoeingcard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-mali-maeder-42110.jpg" alt="Lake Silver, Italy">
-            <div class="card-body">
-              <h5 class="card-title">Lake Silver, Italy</h5>
-              <p class="card-text">I want to go sailing in Italy.</p>
-              <a href="results.html#card2" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-          <div class="card canoeingcard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-mark-ingraham-13790095.jpg" alt="Great Salt Lake, USA">
-            <div class="card-body">
-              <h5 class="card-title">Great Salt Lake, USA</h5>
-              <p class="card-text">I want to sail, fish and hike in a saltwater lake.</p>
-              <a href="results.html#card3" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-
-
-          <div class="card seaexploringcard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-john-cahil-rom-3041869.jpg" alt="Raja Ampat reef">
-            <div class="card-body">
-              <h5 class="card-title">Raja Ampat, Indonesia</h5>
-              <p class="card-text">I want to swim with sea turtles in a warm, bright reef.</p>
-              <a href="results.html#card6" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-          <div class="card seaexploringcard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-romel-duarte-5329069.jpg" alt="Palawan, Philippines">
-            <div class="card-body">
-              <h5 class="card-title">Palawan, Philippines</h5>
-              <p class="card-text">I want to explore paradise on earth.</p>
-              <a href="results.html#card7" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-
-          <div class="card surfingcard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-larry-snickers-2127468.jpg" alt="Canguu surfing">
-            <div class="card-body">
-              <h5 class="card-title">Canguu, Bali</h5>
-              <p class="card-text">I want to learn to surf in a little paradise. </p>
-              <a href="results.html#card8" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-          <div class="card surfingcard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-pixabay-164041.jpg" alt="Byron Bay, Australia">
-            <div class="card-body">
-              <h5 class="card-title">Byron Bay, Australia</h5>
-              <p class="card-text">I want to surf and sleep on one of the best beaches in the world.</p>
-              <a href="results.html#card9" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-
-          <div class="card hikingcard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-s-migaj-951076.jpg" alt="Swiss Alpine trail">
-            <div class="card-body">
-              <h5 class="card-title">Swiss Alps</h5>
-              <p class="card-text">I want to hike the most peaceful trail in Europe.</p>
-              <a href="results.html#card10" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-          <div class="card hikingcard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-alex-pham-950210.jpg" alt="Arizona canyons">
-            <div class="card-body">
-              <h5 class="card-title">Cathedral Rock Trail, Arizona</h5>
-              <p class="card-text">I want to explore the canyons and desert of Arizona.</p>
-              <a href="results.html#card11" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-          <div class="card hikingcard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-duc-nguyen-13881208.jpg" alt="Bridge in Sapa, Vietnam">
-            <div class="card-body">
-              <h5 class="card-title">Sapa, Vietnam</h5>
-              <p class="card-text">I want to walk off the beaten track.</p>
-              <a href="results.html#card12" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-
-
-          <div class="card citycard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-robert-lozano-12579631.jpg" alt="San Miguel de Allende, Mexico">
-            <div class="card-body">
-              <h5 class="card-title">San Miguel de Allende, Mexico</h5>
-              <p class="card-text">I want to be shwon a beautiful city in Mexico.</p>
-              <a href="results.html#card13" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-          <div class="card citycard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-alex-azabache-3290075.jpg" alt="Cairo, Egypt" >
-            <div class="card-body">
-              <h5 class="card-title">Cairo, Egypt</h5>
-              <p class="card-text">I want to be shown Cairo, and not just the pyramids.</p>
-              <a href="results.html#card14" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-          <div class="card citycard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-vlad-alexandru-popa-1486222.jpg" alt="New York City">
-            <div class="card-body">
-              <h5 class="card-title">New York City, USA</h5>
-              <p class="card-text">I want to see all of New York without the stress of planning.</p>
-              <a href="results.html#card15" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-
-
-          <div class="card snowsportscard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-flo-maderebner-869258.jpg" alt="Banff, Canada">
-            <div class="card-body">
-              <h5 class="card-title">Banff, Canada</h5>
-              <p class="card-text">I want to learn to ski in the best learning environment out there.</p>
-              <a href="results.html#card16" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-          <div class="card snowsportscard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-nadia-vasil'eva-7165283.jpg" alt="Lapland, Finland">
-            <div class="card-body">
-              <h5 class="card-title">Lapland, Finland</h5>
-              <p class="card-text">I want to ski in snowy, Christmassy Lapland.</p>
-              <a href="results.html#card17" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-
-          <div class="card snowexplorecard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-alan-wang-11997087.jpg" alt="Winter in Japan">
-            <div class="card-body">
-              <h5 class="card-title">Winter in Japan</h5>
-              <p class="card-text">I want to explore rural Japan in the snow.</p>
-              <a href="results.html#card18" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
-          <div class="card snowexplorecard" style="width: 20rem;">
-            <img class="card-img-top" src="assets/images/pexels-avonne-stalling-3916014.jpg" alt="Bergen, Norway">
-            <div class="card-body">
-              <h5 class="card-title">Bergen, Norway</h5>
-              <p class="card-text">I want to see the fjords and mountains of Norway.</p>
-              <a href="results.html#card19" class="btn btn-primary">Let's Go</a>
-            </div>
-          </div>
+    <div class="card canoeingcard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-mali-maeder-42110.jpg" alt="Lake Silver, Italy">
+        <div class="card-body">
+          <h5 class="card-title">Lake Silver, Italy</h5>
+            <p class="card-text">I want to go sailing in Italy.</p>
+            <a href="results.html#card2" class="btn btn-primary">Let's Go</a>
+        </div>
     </div>
-    <footer>
-      <!-- Responsive footer using Bootstrap cols & Google maps -->
-      <div class="row">
-          <div class="col-sm" id="map">
+    <div class="card canoeingcard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-mark-ingraham-13790095.jpg" alt="Great Salt Lake, USA">
+        <div class="card-body">
+          <h5 class="card-title">Great Salt Lake, USA</h5>
+            <p class="card-text">I want to sail, fish and hike in a saltwater lake.</p>
+            <a href="results.html#card3" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card seaexploringcard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-john-cahil-rom-3041869.jpg" alt="Raja Ampat reef">
+        <div class="card-body">
+          <h5 class="card-title">Raja Ampat, Indonesia</h5>
+            <p class="card-text">I want to swim with sea turtles in a warm, bright reef.</p>
+            <a href="results.html#card6" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card seaexploringcard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-romel-duarte-5329069.jpg" alt="Palawan, Philippines">
+        <div class="card-body">
+          <h5 class="card-title">Palawan, Philippines</h5>
+            <p class="card-text">I want to explore paradise on earth.</p>
+            <a href="results.html#card7" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card surfingcard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-larry-snickers-2127468.jpg" alt="Canguu surfing">
+        <div class="card-body">
+          <h5 class="card-title">Canguu, Bali</h5>
+            <p class="card-text">I want to learn to surf in a little paradise. </p>
+            <a href="results.html#card8" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card surfingcard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-pixabay-164041.jpg" alt="Byron Bay, Australia">
+        <div class="card-body">
+          <h5 class="card-title">Byron Bay, Australia</h5>
+            <p class="card-text">I want to surf and sleep on one of the best beaches in the world.</p>
+            <a href="results.html#card9" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card hikingcard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-s-migaj-951076.jpg" alt="Swiss Alpine trail">
+        <div class="card-body">
+          <h5 class="card-title">Swiss Alps</h5>
+            <p class="card-text">I want to hike the most peaceful trail in Europe.</p>
+            <a href="results.html#card10" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card hikingcard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-alex-pham-950210.jpg" alt="Arizona canyons">
+        <div class="card-body">
+          <h5 class="card-title">Cathedral Rock Trail, Arizona</h5>
+            <p class="card-text">I want to explore the canyons and desert of Arizona.</p>
+            <a href="results.html#card11" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card hikingcard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-duc-nguyen-13881208.jpg" alt="Bridge in Sapa, Vietnam">
+        <div class="card-body">
+          <h5 class="card-title">Sapa, Vietnam</h5>
+            <p class="card-text">I want to walk off the beaten track.</p>
+            <a href="results.html#card12" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card citycard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-robert-lozano-12579631.jpg" alt="San Miguel de Allende, Mexico">
+        <div class="card-body">
+          <h5 class="card-title">San Miguel de Allende, Mexico</h5>
+            <p class="card-text">I want to be shwon a beautiful city in Mexico.</p>
+            <a href="results.html#card13" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card citycard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-alex-azabache-3290075.jpg" alt="Cairo, Egypt" >
+        <div class="card-body">
+          <h5 class="card-title">Cairo, Egypt</h5>
+            <p class="card-text">I want to be shown Cairo, and not just the pyramids.</p>
+            <a href="results.html#card14" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card citycard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-vlad-alexandru-popa-1486222.jpg" alt="New York City">
+        <div class="card-body">
+          <h5 class="card-title">New York City, USA</h5>
+            <p class="card-text">I want to see all of New York without the stress of planning.</p>
+            <a href="results.html#card15" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card snowsportscard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-flo-maderebner-869258.jpg" alt="Banff, Canada">
+        <div class="card-body">
+          <h5 class="card-title">Banff, Canada</h5>
+            <p class="card-text">I want to learn to ski in the best learning environment out there.</p>
+            <a href="results.html#card16" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card snowsportscard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-nadia-vasil'eva-7165283.jpg" alt="Lapland, Finland">
+        <div class="card-body">
+          <h5 class="card-title">Lapland, Finland</h5>
+            <p class="card-text">I want to ski in snowy, Christmassy Lapland.</p>
+            <a href="results.html#card17" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card snowexplorecard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-alan-wang-11997087.jpg" alt="Winter in Japan">
+        <div class="card-body">
+          <h5 class="card-title">Winter in Japan</h5>
+            <p class="card-text">I want to explore rural Japan in the snow.</p>
+            <a href="results.html#card18" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+    <div class="card snowexplorecard" style="width: 20rem;">
+      <img class="card-img-top" src="assets/images/pexels-avonne-stalling-3916014.jpg" alt="Bergen, Norway">
+        <div class="card-body">
+          <h5 class="card-title">Bergen, Norway</h5>
+            <p class="card-text">I want to see the fjords and mountains of Norway.</p>
+            <a href="results.html#card19" class="btn btn-primary">Let's Go</a>
+        </div>
+    </div>
+  </div>
+  <footer>
+    <!-- Responsive footer using Bootstrap cols & Google maps -->
+    <div class="row">
+      <div class="col-sm" id="map">
 
-          </div>
-          <div class="col-sm" id="contact">
-              <h5 class="footer-headings"> Contact:</h5>
-              <p>Travelr</p>
-              <p>78 Glassbank Buildings</p>
-              <p>Morning Square</p>
-              <p>Swansea</p>
-              <p>SA1 9YT</p>
-              <br>
-              <p>Tel: 01233 444 888</p>
-              <p>Email: getintouch@travelr.co.uk</p>
-          </div>
-          <div class="col-sm">
-              <!-- Socials clickable on Font Awesome icon -->
-              <div class="socials">
-                  <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"> </i></a>
-                  <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"> </i></a>
-                  <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"> </i></a>
-              </div>
-          </div>
       </div>
+      <div class="col-sm" id="contact">
+        <h5 class="footer-headings"> Contact:</h5>
+          <p>Travelr</p>
+          <p>78 Glassbank Buildings</p>
+          <p>Morning Square</p>
+          <p>Swansea</p>
+          <p>SA1 9YT</p>
+          <br>
+          <p>Tel: 01233 444 888</p>
+          <p>Email: getintouch@travelr.co.uk</p>
+      </div>
+      <div class="col-sm">
+        <!-- Socials clickable on Font Awesome icon -->
+        <div class="socials">
+          <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"> </i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"> </i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"> </i></a>
+        </div>
+      </div>
+    </div>
   </footer>
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

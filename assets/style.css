@@ -25,11 +25,13 @@ html, body {
   .wrapper {
     margin-right: 8%;
   }
+
   /* results are two per row in wider screens */
   .results {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
+  
 /*-----------------------------------------------------------------------------Text styling */
 
 h3 {
@@ -74,7 +76,7 @@ label {
 
 .nav-link {
     color: whitesmoke;
-    font-size: 24px;
+    font-size: 8pt;
 }
 
 footer h5 {
@@ -126,6 +128,9 @@ footer p {
     padding-top: 5%;
     display: none;
 }
+
+/*-----------------------------------------------------------------------------About page formatting */
+
 
 .outer {
     padding: 5% 10%;
@@ -262,5 +267,9 @@ input[type='checkbox'] {
     /* Stop the filter breaking into three lines on wider screens */
     .mobile-break {
         display: none;
+    }
+
+    .nav-link {
+        font-size: 26pt;
     }
 }

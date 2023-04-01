@@ -229,7 +229,8 @@ Deployed via process:
 
 #### Code
 * [W3Schools](https://www.w3schools.com/) was referenced to check how to add css functions to JQuery.
-* [StackOverflow](https://stackoverflow.com/) inspired filter function by showing how an array could be filtered against another array.
+* [This StackOverflow](https://stackoverflow.com/questions/34901593/how-to-filter-an-array-from-all-elements-of-another-array) post inspired the filter function by showing how an array could be filtered against another array.
+* [While this StackOverflow](https://stackoverflow.com/questions/237104/how-do-i-check-if-an-array-includes-a-value-in-javascript) also taught me about using the includes method to check the filter array.
 
 ## Finished Product
 * ![001](https://github.com/vicgoodall/travelr/blob/main/assets/images/final-product/Image01.png)
